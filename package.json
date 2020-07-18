@@ -4,7 +4,7 @@
   "description": "A simple Tailwind CSS boilerplate",
   "scripts": {
     "dev": "tailwindcss build tailwind.css -o public/css/tailwind.output.css",
-    "build": "env NODE_ENV=production postcss tailwind.css -o public/css/tailwind.output.css"
+    "build": "cross-env NODE_ENV=production postcss tailwind.css -o public/css/tailwind.output.css"
   },
   "keywords": [
     "tailwind",
@@ -24,6 +24,7 @@
     "tailwindcss": "1.4.6"
   },
   "devDependencies": {
-    "@tailwindcss/custom-forms": "0.2.1"
+    "@tailwindcss/custom-forms": "0.2.1",
+    "cross-env": "7.0.2"
   }
 }
